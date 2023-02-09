@@ -40,13 +40,17 @@ public class WhenCreatingObjects {
     @Test
     public void whenAnimalsPlay() {
 // TODO: Uncomment me
-//
-//        Pet fido = new Dog("Fido","Bone", 5);
-//        Pet spot = new Cat("Spot","String", 5);
-//        Pet hazel = new Hamster("Hazel", 1, "Wheel");
-//
-//        assertThat(fido.play(), equalTo("plays with bone"));
-//        assertThat(spot.play(), equalTo("plays with string"));
-//        assertThat(hazel.play(), equalTo("runs in wheel"));
+
+        Pet fido = new Dog("Fido","Bone", 5);
+        Pet spot = new Cat("Spot","String", 5);
+        Pet hazel = new Hamster("Hazel", 1, "Wheel");
+
+        assertThat(fido.play(), equalTo("plays with bone"));
+        assertThat(spot.play(), equalTo("plays with string"));
+        assertThat(hazel.play(), equalTo("runs in wheel"));
+
+//        Calling play() method from object of child Class (Dog type)
+        Dog dido = new Dog("Fido","Bone", 5);
+        assertThat(dido.play(), equalTo("plays with bone"));
     }
 }
